@@ -35,7 +35,7 @@
   $url = "http://100.100.100.200/latest/meta-data/instance-id";
   $instance_id = file_get_contents($url);
   # Get the instance's availability zone from metadata and store it in the $zone variable
-  $url = "http://100.100.100.200/latest/meta-data/placement/availability-zone";
+  $url = "http://100.100.100.200/latest/meta-data/zone-id";
   $zone = file_get_contents($url);
 
   # Print the Availability Zone
